@@ -1,3 +1,4 @@
+
 #ifndef Child2_hpp
 #define Child2_hpp
 
@@ -5,21 +6,19 @@
 #include <string>
 #include "baseAbstractClass.hpp"
 
-//Класс ВУЗ хранит данные по студентам, преподавателям и административному персоналу. Для каждого преподавателя определено: ФИО; перечислены группы, которые ведет; предметы, которые преподает. Для административного персонала определено: ФИО, должность, телефон, область ответственности.
 
-class TEACHER : public BASE
-{
+class TEACHER : public BASE {
 public:
     TEACHER();//Конструктор пустой
-    TEACHER(std:: string name1,std:: string surname1, std:: string fathername1,std :: string group1,std :: string predmet1);
+    TEACHER(std::string name1, std::string surname1, std::string fathername1, std::string group1, std::string predmet1);
     TEACHER(int n);//Конструктор
-    
+
     void showOne() override;
 public:
-    std :: string name;
-    std :: string surname;
-    std :: string fathername;
-    std :: string group;
-    std :: string predmet;
+    std::string name;
+    std::string surname;
+    std::string fathername;
+    std::string group;
+    std::string predmet;
 };
 #endif /* Child2_hpp */

@@ -1,19 +1,20 @@
+
 #include "Child1.hpp"
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 using namespace std;
 
-STUDENT::STUDENT()
-{
-  
+STUDENT::STUDENT() {
+
 }
 
-STUDENT::STUDENT(int n)
-{
-    cout << "Input SURNAME, NAME, PATRONYMIC\n->" ;
+STUDENT::STUDENT(int n) {
+    
+    cout << "Input SURNAME, NAME, PATRONYMIC\n->";
     cin >> name;
     cin >> surname;
     cin >> fathername;
+    
     cout << "Input GROUP, SPECIALIZATION, COURCE and AVERAGE SCORE\n->";
     cin >> group;
     cin >> speciality;
@@ -22,9 +23,8 @@ STUDENT::STUDENT(int n)
 }
 
 
-STUDENT::STUDENT(std:: string name1,std:: string surname1, std:: string fathername1, std::string group1,std:: string speciality1, std::string course1, std::string averagScore1)
-{
-    
+STUDENT::STUDENT(std::string name1, std::string surname1, std::string fathername1, std::string group1, std::string speciality1, std::string course1, std::string averagScore1) {
+
     name = name1;
     surname = surname1;
     fathername = fathername1;
@@ -32,11 +32,11 @@ STUDENT::STUDENT(std:: string name1,std:: string surname1, std:: string fatherna
     speciality = speciality1;
     course = course1;
     averagScore = averagScore1;
-    
+
 }
-void STUDENT::showOne ()
-{
-    cout << setw(18) << left << name << setw(18) << left << surname << setw(18) << left << fathername << setw(10) << left << group << setw(21) << left <<speciality << setw(14) << left <<course << setw(14) << left << averagScore << "\n";
+
+void STUDENT::showOne() {
+    cout << setw(18) << left << name << setw(18) << left << surname << setw(18) << left << fathername << setw(10) << left << group << setw(21) << left << speciality << setw(14) << left << course << setw(14) << left << averagScore << "\n";
 }
 
 

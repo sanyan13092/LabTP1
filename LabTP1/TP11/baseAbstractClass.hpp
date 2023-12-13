@@ -1,3 +1,4 @@
+
 #ifndef baseAbstractClass_hpp
 #define baseAbstractClass_hpp
 
@@ -5,8 +6,7 @@
 #include <fstream> //для чтения/записи в файл
 
 
-class BASE
-{
+class BASE {
 public:
     virtual void showOne() = 0;
     virtual ~BASE();

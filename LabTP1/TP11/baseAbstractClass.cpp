@@ -1,11 +1,10 @@
+
 #include "baseAbstractClass.hpp"
 
-BASE::~BASE()
-{
+BASE::~BASE() {
 
 }
 
-void BASE::showOne()
-{
-    
+void BASE::showOne() {
+
 }
